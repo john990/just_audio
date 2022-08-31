@@ -50,7 +50,7 @@ class MyAppState extends State<MyApp> with WidgetsBindingObserver {
     }
 
     // TODO here is repeat code for bug ｜｜｜｜｜｜｜｜
-    Timer.periodic(const Duration(seconds: 1), (timer) async {
+    Timer.periodic(const Duration(milliseconds: 500), (timer) async {
       // await _player.
       await _player.seek(Duration.zero);
       await _player.play();
